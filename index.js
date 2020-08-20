@@ -96,6 +96,7 @@ class Car {
     } else {
       this.odometer = maxDistance
     }
+    
     this.tank -= distance / this.milesPerGallon
 
     if (this.tank <= 0) {
@@ -117,6 +118,7 @@ class Car {
         + Speaking should return a phrase `Hello my name is {name}, I am from {location}`.
         + {name} and {location} of course come from the instance's own properties.
 */
+
 class Lambdasian {
   constructor(object) {
     this.name = object.name
@@ -143,6 +145,7 @@ class Lambdasian {
         + `demo` receives a `subject` string as an argument and returns the phrase 'Today we are learning about {subject}' where subject is the param passed in.
         + `grade` receives a `student` object and a `subject` string as arguments and returns '{student.name} receives a perfect score on {subject}'
 */
+
 class Instructor extends Lambdasian {
   constructor(object) {
     super(object)
